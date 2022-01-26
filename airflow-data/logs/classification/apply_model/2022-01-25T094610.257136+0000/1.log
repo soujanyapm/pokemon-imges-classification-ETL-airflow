@@ -1,0 +1,23 @@
+[2022-01-25 09:52:46,280] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.apply_model 2022-01-25T09:46:10.257136+00:00 [queued]>
+[2022-01-25 09:52:46,296] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.apply_model 2022-01-25T09:46:10.257136+00:00 [queued]>
+[2022-01-25 09:52:46,297] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 09:52:46,297] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-01-25 09:52:46,298] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 09:52:46,319] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): apply_model> on 2022-01-25T09:46:10.257136+00:00
+[2022-01-25 09:52:46,326] {standard_task_runner.py:52} INFO - Started process 45 to run task
+[2022-01-25 09:52:46,331] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'classification', 'apply_model', '2022-01-25T09:46:10.257136+00:00', '--job-id', '32', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/classification.py', '--cfg-path', '/tmp/tmpbihtwr82', '--error-file', '/tmp/tmps6cjwh_k']
+[2022-01-25 09:52:46,337] {standard_task_runner.py:77} INFO - Job 32: Subtask apply_model
+[2022-01-25 09:52:46,391] {logging_mixin.py:104} INFO - Running <TaskInstance: classification.apply_model 2022-01-25T09:46:10.257136+00:00 [running]> on host 2dc98551bc76
+[2022-01-25 09:52:46,438] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=classification
+AIRFLOW_CTX_TASK_ID=apply_model
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-25T09:46:10.257136+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-25T09:46:10.257136+00:00
+[2022-01-25 09:53:00,033] {logging_mixin.py:104} WARNING - /usr/local/lib/python3.6/site-packages/PIL/Image.py:976 UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+[2022-01-25 09:54:15,737] {python.py:118} INFO - Done. Returned value was: None
+[2022-01-25 09:54:15,748] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=classification, task_id=apply_model, execution_date=20220125T094610, start_date=20220125T095246, end_date=20220125T095415
+[2022-01-25 09:54:15,783] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-01-25 09:54:15,814] {local_task_job.py:146} INFO - Task exited with return code 0

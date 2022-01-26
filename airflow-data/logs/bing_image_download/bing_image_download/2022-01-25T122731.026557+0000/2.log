@@ -1,0 +1,83 @@
+[2022-01-25 12:34:16,059] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: bing_image_download.bing_image_download 2022-01-25T12:27:31.026557+00:00 [queued]>
+[2022-01-25 12:34:16,116] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: bing_image_download.bing_image_download 2022-01-25T12:27:31.026557+00:00 [queued]>
+[2022-01-25 12:34:16,119] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 12:34:16,125] {taskinstance.py:1043} INFO - Starting attempt 2 of 2
+[2022-01-25 12:34:16,126] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 12:34:16,188] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): bing_image_download> on 2022-01-25T12:27:31.026557+00:00
+[2022-01-25 12:34:16,197] {standard_task_runner.py:52} INFO - Started process 118 to run task
+[2022-01-25 12:34:16,210] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'bing_image_download', 'bing_image_download', '2022-01-25T12:27:31.026557+00:00', '--job-id', '154', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/bing_image_download.py', '--cfg-path', '/tmp/tmpsjmb76sm', '--error-file', '/tmp/tmptt4otgtm']
+[2022-01-25 12:34:16,211] {standard_task_runner.py:77} INFO - Job 154: Subtask bing_image_download
+[2022-01-25 12:34:16,345] {logging_mixin.py:104} INFO - Running <TaskInstance: bing_image_download.bing_image_download 2022-01-25T12:27:31.026557+00:00 [running]> on host 05cddda723d4
+[2022-01-25 12:34:16,409] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=bing_image_download
+AIRFLOW_CTX_TASK_ID=bing_image_download
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-25T12:27:31.026557+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-25T12:27:31.026557+00:00
+[2022-01-25 12:34:16,417] {logging_mixin.py:104} INFO - [INFO] searching Bing API for 'pikachu'
+[2022-01-25 12:34:26,430] {taskinstance.py:1455} ERROR - HTTPSConnectionPool(host='api.bing.microsoft.com', port=443): Max retries exceeded with url: /v7.0/images/search/?q=pikachu&offset=0&count=10 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa938630358>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 978, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 309, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fa938630358>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.bing.microsoft.com', port=443): Max retries exceeded with url: /v7.0/images/search/?q=pikachu&offset=0&count=10 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa938630358>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/bing_image_download.py", line 83, in bing_image_download
+    search = requests.get(URL, headers=headers, params=params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.bing.microsoft.com', port=443): Max retries exceeded with url: /v7.0/images/search/?q=pikachu&offset=0&count=10 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa938630358>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+[2022-01-25 12:34:26,440] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=bing_image_download, task_id=bing_image_download, execution_date=20220125T122731, start_date=20220125T123416, end_date=20220125T123426
+[2022-01-25 12:34:26,530] {local_task_job.py:146} INFO - Task exited with return code 1

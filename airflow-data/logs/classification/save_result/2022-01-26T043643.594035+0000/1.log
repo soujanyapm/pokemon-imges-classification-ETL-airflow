@@ -1,0 +1,97 @@
+[2022-01-26 04:38:29,582] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.save_result 2022-01-26T04:36:43.594035+00:00 [queued]>
+[2022-01-26 04:38:29,605] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.save_result 2022-01-26T04:36:43.594035+00:00 [queued]>
+[2022-01-26 04:38:29,606] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-26 04:38:29,606] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-01-26 04:38:29,607] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-26 04:38:29,619] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): save_result> on 2022-01-26T04:36:43.594035+00:00
+[2022-01-26 04:38:29,625] {standard_task_runner.py:52} INFO - Started process 617 to run task
+[2022-01-26 04:38:29,631] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'classification', 'save_result', '2022-01-26T04:36:43.594035+00:00', '--job-id', '203', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/classification.py', '--cfg-path', '/tmp/tmpcohn2f7e', '--error-file', '/tmp/tmpnz91a03e']
+[2022-01-26 04:38:29,636] {standard_task_runner.py:77} INFO - Job 203: Subtask save_result
+[2022-01-26 04:38:29,692] {logging_mixin.py:104} INFO - Running <TaskInstance: classification.save_result 2022-01-26T04:36:43.594035+00:00 [running]> on host 115f9a25dda0
+[2022-01-26 04:38:29,741] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=classification
+AIRFLOW_CTX_TASK_ID=save_result
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-26T04:36:43.594035+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-26T04:36:43.594035+00:00
+[2022-01-26 04:38:30,012] {logging_mixin.py:104} INFO - hello
+[2022-01-26 04:38:30,017] {logging_mixin.py:104} INFO - bulbasaur_0.jpeg Image it is
+[2022-01-26 04:38:30,555] {logging_mixin.py:104} INFO - bulbasaur_1.png Image it is
+[2022-01-26 04:38:30,779] {logging_mixin.py:104} INFO - bulbasaur_10.jpeg Image it is
+[2022-01-26 04:38:30,894] {logging_mixin.py:104} INFO - bulbasaur_11.png Image it is
+[2022-01-26 04:38:31,089] {logging_mixin.py:104} INFO - bulbasaur_12.png Image it is
+[2022-01-26 04:38:31,297] {logging_mixin.py:104} INFO - bulbasaur_13.png Image it is
+[2022-01-26 04:38:31,545] {logging_mixin.py:104} INFO - bulbasaur_15.jpeg Image it is
+[2022-01-26 04:38:31,661] {logging_mixin.py:104} INFO - bulbasaur_16.png Image it is
+[2022-01-26 04:38:31,869] {logging_mixin.py:104} INFO - bulbasaur_17.png Image it is
+[2022-01-26 04:38:32,093] {logging_mixin.py:104} INFO - bulbasaur_18.png Image it is
+[2022-01-26 04:38:33,417] {logging_mixin.py:104} INFO - bulbasaur_19.jpeg Image it is
+[2022-01-26 04:38:33,614] {logging_mixin.py:104} INFO - bulbasaur_2.jpeg Image it is
+[2022-01-26 04:38:33,774] {logging_mixin.py:104} INFO - bulbasaur_20.png Image it is
+[2022-01-26 04:38:33,935] {logging_mixin.py:104} INFO - bulbasaur_21.png Image it is
+[2022-01-26 04:38:35,369] {logging_mixin.py:104} INFO - bulbasaur_22.jpeg Image it is
+[2022-01-26 04:38:35,590] {logging_mixin.py:104} INFO - bulbasaur_23.png Image it is
+[2022-01-26 04:38:35,809] {logging_mixin.py:104} INFO - bulbasaur_24.jpeg Image it is
+[2022-01-26 04:38:37,421] {logging_mixin.py:104} INFO - bulbasaur_3.png Image it is
+[2022-01-26 04:38:37,569] {logging_mixin.py:104} INFO - bulbasaur_4.png Image it is
+[2022-01-26 04:38:37,758] {logging_mixin.py:104} INFO - bulbasaur_5.png Image it is
+[2022-01-26 04:38:37,964] {logging_mixin.py:104} INFO - bulbasaur_6.png Image it is
+[2022-01-26 04:38:38,182] {logging_mixin.py:104} INFO - bulbasaur_7.png Image it is
+[2022-01-26 04:38:38,285] {logging_mixin.py:104} INFO - bulbasaur_8.png Image it is
+[2022-01-26 04:38:38,392] {logging_mixin.py:104} INFO - pikachu_1.png Image it is
+[2022-01-26 04:38:38,713] {logging_mixin.py:104} INFO - pikachu_11.jpeg Image it is
+[2022-01-26 04:38:40,078] {logging_mixin.py:104} INFO - pikachu_12.png Image it is
+[2022-01-26 04:38:40,190] {logging_mixin.py:104} INFO - pikachu_13.jpeg Image it is
+[2022-01-26 04:38:40,343] {logging_mixin.py:104} INFO - pikachu_15.jpeg Image it is
+[2022-01-26 04:38:41,623] {logging_mixin.py:104} INFO - pikachu_16.jpeg Image it is
+[2022-01-26 04:38:41,739] {logging_mixin.py:104} INFO - pikachu_17.jpeg Image it is
+[2022-01-26 04:38:41,927] {logging_mixin.py:104} INFO - pikachu_18.png Image it is
+[2022-01-26 04:38:42,156] {logging_mixin.py:104} INFO - pikachu_19.jpeg Image it is
+[2022-01-26 04:38:42,336] {logging_mixin.py:104} INFO - pikachu_2.png Image it is
+[2022-01-26 04:38:42,603] {logging_mixin.py:104} INFO - pikachu_20.jpeg Image it is
+[2022-01-26 04:38:42,709] {logging_mixin.py:104} INFO - pikachu_21.jpeg Image it is
+[2022-01-26 04:38:45,117] {logging_mixin.py:104} INFO - pikachu_22.jpeg Image it is
+[2022-01-26 04:38:45,351] {logging_mixin.py:104} INFO - pikachu_23.png Image it is
+[2022-01-26 04:38:45,616] {logging_mixin.py:104} INFO - pikachu_26.jpeg Image it is
+[2022-01-26 04:38:45,784] {logging_mixin.py:104} INFO - pikachu_28.jpeg Image it is
+[2022-01-26 04:38:46,083] {logging_mixin.py:104} INFO - pikachu_3.png Image it is
+[2022-01-26 04:38:46,228] {logging_mixin.py:104} INFO - pikachu_30.jpeg Image it is
+[2022-01-26 04:38:46,965] {logging_mixin.py:104} INFO - pikachu_31.jpeg Image it is
+[2022-01-26 04:38:47,299] {logging_mixin.py:104} INFO - pikachu_32.jpeg Image it is
+[2022-01-26 04:38:47,709] {logging_mixin.py:104} INFO - pikachu_33.png Image it is
+[2022-01-26 04:38:47,908] {logging_mixin.py:104} INFO - pikachu_39.jpeg Image it is
+[2022-01-26 04:38:48,659] {logging_mixin.py:104} INFO - pikachu_4.png Image it is
+[2022-01-26 04:38:49,273] {logging_mixin.py:104} INFO - pikachu_40.jpeg Image it is
+[2022-01-26 04:38:49,636] {logging_mixin.py:104} INFO - pikachu_42.jpeg Image it is
+[2022-01-26 04:38:50,624] {logging_mixin.py:104} INFO - pikachu_43.jpeg Image it is
+[2022-01-26 04:38:50,790] {logging_mixin.py:104} INFO - pikachu_44.jpeg Image it is
+[2022-01-26 04:38:51,137] {logging_mixin.py:104} INFO - pikachu_48.png Image it is
+[2022-01-26 04:38:53,693] {logging_mixin.py:104} INFO - pikachu_49.png Image it is
+[2022-01-26 04:38:53,925] {logging_mixin.py:104} INFO - pikachu_5.png Image it is
+[2022-01-26 04:38:54,125] {logging_mixin.py:104} INFO - pikachu_6.png Image it is
+[2022-01-26 04:38:54,637] {logging_mixin.py:104} INFO - pikachu_8.png Image it is
+[2022-01-26 04:38:54,920] {logging_mixin.py:104} INFO - pikachu_14.png Image it is
+[2022-01-26 04:38:55,297] {logging_mixin.py:104} INFO - pikachu_37.jpeg Image it is
+[2022-01-26 04:38:55,442] {logging_mixin.py:104} INFO - bulbasaur_14.jpeg Image it is
+[2022-01-26 04:38:55,552] {logging_mixin.py:104} INFO - bulbasaur_9.jpeg Image it is
+[2022-01-26 04:38:55,779] {logging_mixin.py:104} INFO - pikachu_0.jpeg Image it is
+[2022-01-26 04:38:55,965] {logging_mixin.py:104} INFO - pikachu_10.png Image it is
+[2022-01-26 04:38:56,774] {logging_mixin.py:104} INFO - pikachu_24.png Image it is
+[2022-01-26 04:38:57,041] {logging_mixin.py:104} INFO - pikachu_25.jpeg Image it is
+[2022-01-26 04:38:57,241] {logging_mixin.py:104} INFO - pikachu_27.jpeg Image it is
+[2022-01-26 04:38:57,410] {logging_mixin.py:104} INFO - pikachu_29.png Image it is
+[2022-01-26 04:38:57,523] {logging_mixin.py:104} INFO - pikachu_34.png Image it is
+[2022-01-26 04:38:57,740] {logging_mixin.py:104} INFO - pikachu_35.jpeg Image it is
+[2022-01-26 04:38:57,856] {logging_mixin.py:104} INFO - pikachu_36.jpeg Image it is
+[2022-01-26 04:38:58,007] {logging_mixin.py:104} INFO - pikachu_38.jpeg Image it is
+[2022-01-26 04:38:58,151] {logging_mixin.py:104} INFO - pikachu_45.jpeg Image it is
+[2022-01-26 04:38:58,377] {logging_mixin.py:104} INFO - pikachu_46.jpeg Image it is
+[2022-01-26 04:38:58,535] {logging_mixin.py:104} INFO - pikachu_47.jpeg Image it is
+[2022-01-26 04:38:58,651] {logging_mixin.py:104} INFO - pikachu_7.jpeg Image it is
+[2022-01-26 04:38:58,765] {logging_mixin.py:104} INFO - pikachu_9.png Image it is
+[2022-01-26 04:38:59,670] {python.py:118} INFO - Done. Returned value was: None
+[2022-01-26 04:38:59,702] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=classification, task_id=save_result, execution_date=20220126T043643, start_date=20220126T043829, end_date=20220126T043859
+[2022-01-26 04:38:59,746] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-01-26 04:38:59,784] {local_task_job.py:146} INFO - Task exited with return code 0

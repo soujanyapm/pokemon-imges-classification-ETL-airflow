@@ -1,0 +1,97 @@
+[2022-01-25 09:40:17,530] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.check_data_exist 2022-01-25T09:40:12.528469+00:00 [queued]>
+[2022-01-25 09:40:17,553] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.check_data_exist 2022-01-25T09:40:12.528469+00:00 [queued]>
+[2022-01-25 09:40:17,554] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 09:40:17,554] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-01-25 09:40:17,554] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 09:40:17,567] {taskinstance.py:1063} INFO - Executing <Task(BranchPythonOperator): check_data_exist> on 2022-01-25T09:40:12.528469+00:00
+[2022-01-25 09:40:17,573] {standard_task_runner.py:52} INFO - Started process 1383 to run task
+[2022-01-25 09:40:17,578] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'classification', 'check_data_exist', '2022-01-25T09:40:12.528469+00:00', '--job-id', '23', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/classification.py', '--cfg-path', '/tmp/tmpumjv0b34', '--error-file', '/tmp/tmpkt4rjngz']
+[2022-01-25 09:40:17,583] {standard_task_runner.py:77} INFO - Job 23: Subtask check_data_exist
+[2022-01-25 09:40:17,635] {logging_mixin.py:104} INFO - Running <TaskInstance: classification.check_data_exist 2022-01-25T09:40:12.528469+00:00 [running]> on host e28fac53771a
+[2022-01-25 09:40:17,680] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=classification
+AIRFLOW_CTX_TASK_ID=check_data_exist
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-25T09:40:12.528469+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-25T09:40:12.528469+00:00
+[2022-01-25 09:40:21,610] {connectionpool.py:752} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd4721780>: Failed to establish a new connection: [Errno 113] No route to host',)': /sourcedata?location=
+[2022-01-25 09:40:31,369] {connectionpool.py:752} WARNING - Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd4721b38>: Failed to establish a new connection: [Errno 113] No route to host',)': /sourcedata?location=
+[2022-01-25 09:40:34,970] {connectionpool.py:752} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd4788f60>: Failed to establish a new connection: [Errno 113] No route to host',)': /sourcedata?location=
+[2022-01-25 09:40:42,011] {connectionpool.py:752} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd47882b0>: Failed to establish a new connection: [Errno 113] No route to host',)': /sourcedata?location=
+[2022-01-25 09:40:46,733] {connectionpool.py:752} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd46ea208>: Failed to establish a new connection: [Errno 113] No route to host',)': /sourcedata?location=
+[2022-01-25 09:40:48,090] {taskinstance.py:1455} ERROR - HTTPConnectionPool(host='192.168.1.8', port=9000): Max retries exceeded with url: /sourcedata?location= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd46ea6a0>: Failed to establish a new connection: [Errno 113] No route to host',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 113] No route to host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.6/http/client.py", line 1291, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1337, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1286, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1046, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.6/http/client.py", line 984, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f8fd46ea6a0>: Failed to establish a new connection: [Errno 113] No route to host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 324, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/classification.py", line 49, in is_minio_data_exist
+    for obj in objects:
+  File "/usr/local/lib/python3.6/site-packages/minio/api.py", line 2728, in _list_objects
+    response = self._execute("GET", bucket_name, query_params=query)
+  File "/usr/local/lib/python3.6/site-packages/minio/api.py", line 394, in _execute
+    region = self._get_region(bucket_name, None)
+  File "/usr/local/lib/python3.6/site-packages/minio/api.py", line 465, in _get_region
+    query_params={"location": ""},
+  File "/usr/local/lib/python3.6/site-packages/minio/api.py", line 271, in _url_open
+    preload_content=preload_content,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  [Previous line repeated 2 more times]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.8', port=9000): Max retries exceeded with url: /sourcedata?location= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fd46ea6a0>: Failed to establish a new connection: [Errno 113] No route to host',))
+[2022-01-25 09:40:48,101] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=classification, task_id=check_data_exist, execution_date=20220125T094012, start_date=20220125T094017, end_date=20220125T094048
+[2022-01-25 09:40:48,133] {local_task_job.py:146} INFO - Task exited with return code 1

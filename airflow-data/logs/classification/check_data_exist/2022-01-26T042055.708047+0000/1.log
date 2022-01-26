@@ -1,0 +1,24 @@
+[2022-01-26 04:21:00,710] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.check_data_exist 2022-01-26T04:20:55.708047+00:00 [queued]>
+[2022-01-26 04:21:00,730] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.check_data_exist 2022-01-26T04:20:55.708047+00:00 [queued]>
+[2022-01-26 04:21:00,730] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-26 04:21:00,731] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-01-26 04:21:00,731] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-26 04:21:00,765] {taskinstance.py:1063} INFO - Executing <Task(BranchPythonOperator): check_data_exist> on 2022-01-26T04:20:55.708047+00:00
+[2022-01-26 04:21:00,771] {standard_task_runner.py:52} INFO - Started process 41 to run task
+[2022-01-26 04:21:00,778] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'classification', 'check_data_exist', '2022-01-26T04:20:55.708047+00:00', '--job-id', '193', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/classification.py', '--cfg-path', '/tmp/tmpm97zb24o', '--error-file', '/tmp/tmplz9m0c0l']
+[2022-01-26 04:21:00,786] {standard_task_runner.py:77} INFO - Job 193: Subtask check_data_exist
+[2022-01-26 04:21:00,841] {logging_mixin.py:104} INFO - Running <TaskInstance: classification.check_data_exist 2022-01-26T04:20:55.708047+00:00 [running]> on host 115f9a25dda0
+[2022-01-26 04:21:00,887] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=classification
+AIRFLOW_CTX_TASK_ID=check_data_exist
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-26T04:20:55.708047+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-26T04:20:55.708047+00:00
+[2022-01-26 04:21:00,905] {python.py:118} INFO - Done. Returned value was: end
+[2022-01-26 04:21:00,906] {skipmixin.py:124} INFO - Following branch end
+[2022-01-26 04:21:00,915] {skipmixin.py:155} INFO - Skipping tasks ['load_data']
+[2022-01-26 04:21:00,972] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=classification, task_id=check_data_exist, execution_date=20220126T042055, start_date=20220126T042100, end_date=20220126T042100
+[2022-01-26 04:21:01,017] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-01-26 04:21:01,028] {local_task_job.py:146} INFO - Task exited with return code 0

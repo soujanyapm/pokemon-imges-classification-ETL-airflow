@@ -1,0 +1,254 @@
+[2022-01-25 10:48:38,377] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: bing_image_download.bing_image_download 2022-01-25T10:42:58.250907+00:00 [queued]>
+[2022-01-25 10:48:38,398] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: bing_image_download.bing_image_download 2022-01-25T10:42:58.250907+00:00 [queued]>
+[2022-01-25 10:48:38,398] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 10:48:38,399] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-01-25 10:48:38,399] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 10:48:38,418] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): bing_image_download> on 2022-01-25T10:42:58.250907+00:00
+[2022-01-25 10:48:38,423] {standard_task_runner.py:52} INFO - Started process 42 to run task
+[2022-01-25 10:48:38,430] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'bing_image_download', 'bing_image_download', '2022-01-25T10:42:58.250907+00:00', '--job-id', '95', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/bing_image_download.py', '--cfg-path', '/tmp/tmpfmcinc5f', '--error-file', '/tmp/tmpcsmcw0rg']
+[2022-01-25 10:48:38,431] {standard_task_runner.py:77} INFO - Job 95: Subtask bing_image_download
+[2022-01-25 10:48:38,482] {logging_mixin.py:104} INFO - Running <TaskInstance: bing_image_download.bing_image_download 2022-01-25T10:42:58.250907+00:00 [running]> on host 54a54d544bf0
+[2022-01-25 10:48:38,529] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=bing_image_download
+AIRFLOW_CTX_TASK_ID=bing_image_download
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-25T10:42:58.250907+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-25T10:42:58.250907+00:00
+[2022-01-25 10:48:38,536] {logging_mixin.py:104} INFO - [INFO] searching Bing API for 'pikachu'
+[2022-01-25 10:48:40,023] {logging_mixin.py:104} INFO - [INFO] 1000 total results for 'pikachu'
+[2022-01-25 10:48:40,024] {logging_mixin.py:104} INFO - [INFO] making request for group 0-50 of 1000...
+[2022-01-25 10:48:40,859] {logging_mixin.py:104} INFO - [INFO] saving images for group 0-50 of 1000...
+[2022-01-25 10:48:40,860] {logging_mixin.py:104} INFO - [INFO] fetching: http://vignette3.wikia.nocookie.net/wii/images/7/77/Pikachu_SSB4.jpg/revision/latest?cb=20140210000421
+[2022-01-25 10:48:43,235] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngimg.com/uploads/pokemon/pokemon_PNG15.png
+[2022-01-25 10:48:43,848] {logging_mixin.py:104} INFO - [INFO] fetching: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f6bf5b3-c9b6-44c2-ab80-06e3ea80d511/dca37p4-e992703b-3518-475a-a3bd-bc2831f13e7b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNGY2YmY1YjMtYzliNi00NGMyLWFiODAtMDZlM2VhODBkNTExXC9kY2EzN3A0LWU5OTI3MDNiLTM1MTgtNDc1YS1hM2JkLWJjMjgzMWYxM2U3Yi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.BgM4bC-lqNizie8fhV-EnS5hLNCPn5y8iROlzXNAdk4
+[2022-01-25 10:48:45,061] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngimg.com/uploads/pokemon/pokemon_PNG93.png
+[2022-01-25 10:48:45,375] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngimg.com/uploads/pokemon/pokemon_PNG148.png
+[2022-01-25 10:48:45,985] {logging_mixin.py:104} INFO - [INFO] fetching: https://3.bp.blogspot.com/-QRBqlfFJt6U/ULpgGND3XFI/AAAAAAAACPs/TUrUig9gj5A/s1600/pikachu.png
+[2022-01-25 10:48:47,412] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.nintendoworldreport.com/media/38183/4/1.jpg
+[2022-01-25 10:48:50,070] {logging_mixin.py:104} INFO - [INFO] fetching: https://ph.portal-pokemon.com/upload/en/HelloPika.png
+[2022-01-25 10:48:52,028] {logging_mixin.py:104} INFO - [INFO] fetching: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/91cc6c40961423.5793b50987cac.jpg
+[2022-01-25 10:48:53,152] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngimg.com/uploads/pokemon/pokemon_PNG42.png
+[2022-01-25 10:48:53,708] {logging_mixin.py:104} INFO - [INFO] fetching: http://clipartmag.com/image/pikachu-images-for-drawing-29.png
+[2022-01-25 10:48:55,047] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a-/AAuE7mBRlOG3moYW1oLN4L0V6FP-O-3IJrF1NoGjDw=s900-mo-c-c0xffffffff-rj-k-no
+[2022-01-25 10:48:55,393] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdn.myminifactory.com/assets/object-assets/5c64403a9c7ad/images/d27029fa-5bce-4731-b8b4-af6be07fe701.jpg
+[2022-01-25 10:49:04,500] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdn.vox-cdn.com/thumbor/RGPwZaA8xxwrVd4spVyTGNrxHh0=/99x0:1179x720/1200x800/filters:focal(99x0:1179x720)/cdn.vox-cdn.com/uploads/chorus_image/image/50166993/2016.1_Great_Detective_Pikachu_Birth_of_a_New_Duo__3DS_.0.0.jpg
+[2022-01-25 10:49:06,519] {logging_mixin.py:104} INFO - [INFO] fetching: https://img1.cgtrader.com/items/2419585/aef1cf6064/pikachu-pokemon-3d-printing-3d-model-obj-stl-blend.jpg
+[2022-01-25 10:49:07,603] {logging_mixin.py:104} INFO - [INFO] fetching: https://mir-s3-cdn-cf.behance.net/project_modules/1400/56f6e170109017.5d71da93da213.png
+[2022-01-25 10:49:09,298] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a/AATXAJxtQ_8fLTUGcMTiyJ71r_-B7MdSNej9kUbPfQ=s900-c-k-c0xffffffff-no-rj-mo
+[2022-01-25 10:49:09,697] {logging_mixin.py:104} INFO - [INFO] fetching: https://graffitiscuba.com/wp-content/uploads/2018/03/Cartoons10.jpg
+[2022-01-25 10:49:11,854] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdn.mos.cms.futurecdn.net/dqW4eWEXeU6J8tBpZTpqy5.jpg
+[2022-01-25 10:49:13,263] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngimg.com/uploads/pokemon/pokemon_PNG102.png
+[2022-01-25 10:49:13,625] {logging_mixin.py:104} INFO - [INFO] fetching: http://img2.wikia.nocookie.net/__cb20110811011944/pokemonfanon/images/8/88/Pikachu_XXV.PNG
+[2022-01-25 10:49:16,408] {logging_mixin.py:104} INFO - [INFO] fetching: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c5bbbf70-cfca-4aeb-892b-6ac8c54fb175/ddbr84t-d0753923-bc99-4919-8bb6-2121149399d7.png/v1/fill/w_956,h_836,strp/pikachu_libre_render_by_vexikku_ddbr84t-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzUwMCIsInBhdGgiOiJcL2ZcL2M1YmJiZjcwLWNmY2EtNGFlYi04OTJiLTZhYzhjNTRmYjE3NVwvZGRicjg0dC1kMDc1MzkyMy1iYzk5LTQ5MTktOGJiNi0yMTIxMTQ5Mzk5ZDcucG5nIiwid2lkdGgiOiI8PTQwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.SCZGQ24m5GxrmvuwHJ6Em8lOGDWKTpacKjSjkkFMbCs
+[2022-01-25 10:49:17,941] {logging_mixin.py:104} INFO - [INFO] fetching: http://cdn.shopify.com/s/files/1/0284/4907/9395/products/sticker_pikachu.jpg?v=1573513085
+[2022-01-25 10:49:18,370] {logging_mixin.py:104} INFO - [INFO] fetching: https://static3.srcdn.com/wordpress/wp-content/uploads/2020/10/Pokemon-Sword-and-Shield-Ash-Ketchum-Pikachu.jpg
+[2022-01-25 10:49:18,676] {logging_mixin.py:104} INFO - [INFO] fetching: https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/12/Pikachu-Feature-Image-Cropped.jpg
+[2022-01-25 10:49:18,987] {logging_mixin.py:104} INFO - [INFO] fetching: https://preview.redd.it/x2wdfznl7dc31.jpg?auto=webp&s=ac11d594b10cd85ecdce3c3850887649d6ca7da6
+[2022-01-25 10:49:20,126] {logging_mixin.py:104} INFO - [INFO] fetching: https://i2.wp.com/metro.co.uk/wp-content/uploads/2016/06/ash_s_pikachu-0.png?quality=90&strip=all&zoom=1&resize=899%2C580&ssl=1
+[2022-01-25 10:49:20,684] {logging_mixin.py:104} INFO - [INFO] fetching: http://tonsoffacts.com/wp-content/uploads/2019/11/fp4716-pokemon-pikachu-glow.jpg
+[2022-01-25 10:49:23,420] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_27.jpeg
+[2022-01-25 10:49:23,422] {logging_mixin.py:104} INFO - [INFO] fetching: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25247b92-6844-4fef-8ed8-5055cc35bf58/dd18tmd-d30941e9-a135-4565-ba5f-ac90be835d62.png/v1/fill/w_958,h_834,strp/pikachu_run_render_by_nintega_dario_dd18tmd-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc1MCIsInBhdGgiOiJcL2ZcLzI1MjQ3YjkyLTY4NDQtNGZlZi04ZWQ4LTUwNTVjYzM1YmY1OFwvZGQxOHRtZC1kMzA5NDFlOS1hMTM1LTQ1NjUtYmE1Zi1hYzkwYmU4MzVkNjIucG5nIiwid2lkdGgiOiI8PTIwMTAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pq9b6WZU8vHbWtw8DC3WwZi3p6WYzSD7f0YKTUaru2g
+[2022-01-25 10:49:23,874] {logging_mixin.py:104} INFO - [INFO] fetching: https://graphictide.com/images/shop/hover/307_pikachu-candy.png
+[2022-01-25 10:49:25,703] {logging_mixin.py:104} INFO - [INFO] fetching: https://img.huffingtonpost.com/asset/5a10b3b0180000aa09f6ce35.jpeg?ops=1910_1000
+[2022-01-25 10:49:26,178] {logging_mixin.py:104} INFO - [INFO] fetching: http://images4.fanpop.com/image/photos/22200000/Pikachu-pikachu-22265985-1280-1120.jpg
+[2022-01-25 10:49:28,327] {logging_mixin.py:104} INFO - [INFO] fetching: https://animetos.com/wp-content/uploads/2021/03/img_8458-scaled.jpeg
+[2022-01-25 10:49:32,016] {logging_mixin.py:104} INFO - [INFO] fetching: http://1.bp.blogspot.com/-abBmZroOWLE/VI1OaUQRSVI/AAAAAAAAHag/BUaUVdHh1Ak/s1600/Pikachu_Vector.png
+[2022-01-25 10:49:32,550] {logging_mixin.py:104} INFO - [INFO] fetching: https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/02/16230146/pokemon-community-fat-pikachu-meme.jpg
+[2022-01-25 10:49:34,906] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdn.weasyl.com/~tsaoshin/submissions/1351357/26480474c4f1b1f6b42aa02c67540a21a3daa4cf4da375229ccf723d56d1377d/tsaoshin-025-pikachu.png
+[2022-01-25 10:49:35,333] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.onlinetoys.com.au/19664/pokemon-power-action-pikachu.jpg
+[2022-01-25 10:49:35,781] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a/AATXAJwmhNbZwsDbo_tXP-d9wB7tSqNpV56GFvSjhQ=s900-c-k-c0xffffffff-no-rj-mo
+[2022-01-25 10:49:36,554] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a/AATXAJw9Y95jJiDSFXIG6GWfIZKdHbgfovkOcj66BA=s900-c-k-c0xffffffff-no-rj-mo
+[2022-01-25 10:49:37,003] {logging_mixin.py:104} INFO - [INFO] fetching: https://img2.cgtrader.com/items/670200/bb4720355b/pikachu-3d-model-low-poly-obj-c4d-stl-ztl-mtl.png
+[2022-01-25 10:49:37,433] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdn.gamer-network.net/2018/usgamer/Detective-Pikachu-Header-03.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/75/detective-pikachu-pokemon-next-generation-switch-impressions.jpg
+[2022-01-25 10:49:38,610] {logging_mixin.py:104} INFO - [INFO] fetching: https://preview.redd.it/r3r5fzcibmh21.jpg?auto=webp&s=fb5f20934cc89940c787d04a9a324b7fbed1cb34
+[2022-01-25 10:49:39,657] {logging_mixin.py:104} INFO - [INFO] fetching: https://img2.cgtrader.com/items/768075/a6212ac1a3/pokemon-pikachu-3d-model-low-poly-rigged.jpg
+[2022-01-25 10:49:39,902] {logging_mixin.py:104} INFO - [INFO] fetching: https://soyummy.com/wp-content/uploads/2018/11/pikachu.jpg
+[2022-01-25 10:49:41,263] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_43.jpeg
+[2022-01-25 10:49:41,266] {logging_mixin.py:104} INFO - [INFO] fetching: https://static2.thegamerimages.com/wordpress/wp-content/uploads/2019/05/Detective-Pikachu-4.jpg
+[2022-01-25 10:49:41,568] {logging_mixin.py:104} INFO - [INFO] fetching: http://www.baltana.com/files/wallpapers-14/Pikachu-Widescreen-Wallpapers-37659.jpg
+[2022-01-25 10:49:44,805] {logging_mixin.py:104} INFO - [INFO] fetching: https://vignette3.wikia.nocookie.net/pokemon/images/6/64/Spikey_Eared_Pichu.jpg/revision/latest/scale-to-width-down/2000?cb=20130129204810
+[2022-01-25 10:49:47,594] {logging_mixin.py:104} INFO - [INFO] fetching: https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/08/26080403/ashs-pikachu-on-verge-of-evolving-pokemon-journeys-23-years-franchise-icon.jpg
+[2022-01-25 10:49:51,066] {logging_mixin.py:104} INFO - [INFO] fetching: http://oyster.ignimgs.com/mediawiki/apis.ign.com/pokken-tournament/b/b0/Detail-pikachu.png
+[2022-01-25 10:49:51,458] {logging_mixin.py:104} INFO - [INFO] fetching: https://brokenpanda.net/wp-content/uploads/1588943949_865_Pikachu-HD-Wallpapers-2020.jpg
+[2022-01-25 10:49:52,749] {logging_mixin.py:104} INFO - [INFO] making request for group 50-100 of 1000...
+[2022-01-25 10:49:54,076] {logging_mixin.py:104} INFO - [INFO] saving images for group 50-100 of 1000...
+[2022-01-25 10:49:54,076] {logging_mixin.py:104} INFO - [INFO] fetching: https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/08/26080403/ashs-pikachu-on-verge-of-evolving-pokemon-journeys-23-years-franchise-icon.jpg
+[2022-01-25 10:49:57,324] {logging_mixin.py:104} INFO - [INFO] fetching: https://getwallpapers.com/wallpaper/full/4/9/a/400572.jpg
+[2022-01-25 10:49:59,223] {logging_mixin.py:104} INFO - [INFO] fetching: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93abed28-db9e-4018-aee8-6c817a5863b9/dbsqkhl-bc627623-0eed-4727-a573-b7f6cd48d992.png/v1/fill/w_800,h_855,strp/king_pikachu_by_kraus_illustration_dbsqkhl-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU1IiwicGF0aCI6IlwvZlwvOTNhYmVkMjgtZGI5ZS00MDE4LWFlZTgtNmM4MTdhNTg2M2I5XC9kYnNxa2hsLWJjNjI3NjIzLTBlZWQtNDcyNy1hNTczLWI3ZjZjZDQ4ZDk5Mi5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RBhJ-Eni5Fc_r-5ZBrMSXC8Z0aJvE6PrRT6HPGQehGM
+[2022-01-25 10:49:59,699] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a/AATXAJznnOKPTmacMoV1l7l43kb4YaukGZH9ZSfeSw=s900-c-k-c0xffffffff-no-rj-mo
+[2022-01-25 10:50:00,070] {logging_mixin.py:104} INFO - [INFO] fetching: https://vignette3.wikia.nocookie.net/pokemon/images/6/64/Spikey_Eared_Pichu.jpg/revision/latest/scale-to-width-down/2000?cb=20130129204810
+[2022-01-25 10:50:02,606] {logging_mixin.py:104} INFO - [INFO] fetching: https://webgames.host/uploads/2018/03/pikachu-bros.png
+[2022-01-25 10:50:09,069] {logging_mixin.py:104} INFO - [INFO] fetching: https://wallpapercave.com/wp/wp6346994.png
+[2022-01-25 10:50:09,368] {logging_mixin.py:104} INFO - [INFO] fetching: https://c.shld.net/rpx/i/s/i/spin/10032562/prod_12349903012??hei=64&wid=64&qlt=50
+[2022-01-25 10:50:10,460] {logging_mixin.py:104} INFO - [INFO] fetching: https://static0.thegamerimages.com/wordpress/wp-content/uploads/2020/02/pikachu-featured.jpg
+[2022-01-25 10:50:10,795] {logging_mixin.py:104} INFO - [INFO] fetching: http://www.baltana.com/files/wallpapers-16/Pokemon-Detective-Pikachu-Background-Wallpaper-39818.jpg
+[2022-01-25 10:50:14,673] {logging_mixin.py:104} INFO - [INFO] fetching: https://1.bp.blogspot.com/-Uknx6gietjA/T_RdnzTHJ0I/AAAAAAAAE3s/VsmPxC7Js3E/s1600/Pikachu+Pokemon+Wallpapers+2.jpg
+[2022-01-25 10:50:15,058] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.pinclipart.com/picdir/middle/522-5225314_transparent-detective-pikachu-png-clipart.png
+[2022-01-25 10:50:33,732] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a/AATXAJy5TUeCGX8BPUjyMlQh0S1vFu9-PQFNlxk2xQ=s900-c-k-c0xffffffff-no-rj-mo
+[2022-01-25 10:50:34,028] {logging_mixin.py:104} INFO - [INFO] fetching: https://whirli-production-images.s3.eu-west-2.amazonaws.com/products/yZYb57lPl7/yb9jP0AWgj_pokemon-pikachu-medium.jpg
+[2022-01-25 10:50:36,434] {logging_mixin.py:104} INFO - [INFO] fetching: https://i.etsystatic.com/8557472/r/il/1009f9/1677348229/il_fullxfull.1677348229_ogtm.jpg
+[2022-01-25 10:50:37,469] {logging_mixin.py:104} INFO - [INFO] fetching: https://megamousearts.com/wp-content/uploads/2020/05/Anime-Pikachu.jpg
+[2022-01-25 10:50:38,514] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_65.jpeg
+[2022-01-25 10:50:38,517] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.kolpaper.com/wp-content/uploads/2020/04/Pikachu-Wallpaper-5.jpg
+[2022-01-25 10:50:41,221] {logging_mixin.py:104} INFO - [INFO] fetching: https://s1.thcdn.com/productimg/1600/1600/11793129-3294591567198503.jpg
+[2022-01-25 10:50:41,859] {logging_mixin.py:104} INFO - [INFO] fetching: https://assets1.ignimgs.com/2016/10/28/503eaea31a316jpeg-f9b106.jpg?width=1280
+[2022-01-25 10:50:42,767] {logging_mixin.py:104} INFO - [INFO] fetching: https://static2.srcdn.com/wordpress/wp-content/uploads/2019/05/Detective-Pikachu-Pokemon-Red.jpg
+[2022-01-25 10:50:43,109] {logging_mixin.py:104} INFO - [INFO] fetching: https://images.nintendolife.com/43ece59eb41ff/1280x720.jpg
+[2022-01-25 10:50:43,412] {logging_mixin.py:104} INFO - [INFO] fetching: https://wallpapers.moviemania.io/phone/movie/447404/e255b7/pokemon-detective-pikachu-phone-wallpaper.jpg?w=1536&h=2732
+[2022-01-25 10:50:46,863] {logging_mixin.py:104} INFO - [INFO] fetching: https://media.gq.com/photos/5cd448e6b41d094fd2cd74af/16:9/w_2560%2Cc_limit/There-Could-Be-No-More-Perfect-Pikachu-Than-Ryan-Reynolds-gq-1.jpg
+[2022-01-25 10:50:47,726] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a/AATXAJxWSkYcdzgaCCCeLyKiozmRwjzPpGyIH3dNHMM=s900-c-k-c0xffffffff-no-rj-mo
+[2022-01-25 10:50:48,075] {logging_mixin.py:104} INFO - [INFO] fetching: https://vignette.wikia.nocookie.net/obfcbt-wiki/images/2/21/Pikachucartoonbeatboxbattles.png/revision/latest?cb=20200527170448
+[2022-01-25 10:50:50,410] {logging_mixin.py:104} INFO - [INFO] fetching: https://static0.therichestimages.com/wordpress/wp-content/uploads/2017/12/Sad-Pikachu.jpg
+[2022-01-25 10:50:50,726] {logging_mixin.py:104} INFO - [INFO] fetching: https://lh3.googleusercontent.com/-pjv4YgoL5UI/XyvtmAe7IAI/AAAAAAAAAyg/yw8CdJezZS8u3FPhLCORyjmOhb2HosoKACLcBGAsYHQ/s1600/1596714392572854-14.png
+[2022-01-25 10:50:51,262] {logging_mixin.py:104} INFO - [INFO] fetching: https://media.pocketmonsters.net/imageboard/31/14561285150091.jpg
+[2022-01-25 10:50:53,226] {logging_mixin.py:104} INFO - [INFO] fetching: http://img4.wikia.nocookie.net/__cb20130114020548/projectcrusade/images/7/77/Pikachu.png
+[2022-01-25 10:50:54,985] {logging_mixin.py:104} INFO - [INFO] fetching: https://img1.cgtrader.com/items/2603799/0f31abff97/pikachu-avatar-3d-model-stl.jpg
+[2022-01-25 10:50:55,355] {logging_mixin.py:104} INFO - [INFO] fetching: https://i.kinja-img.com/gawker-media/image/upload/s--7N2i0AxA--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/gvi8m4p95orhorwg0bpv.jpg
+[2022-01-25 10:50:55,633] {logging_mixin.py:104} INFO - [INFO] fetching: https://static1.thegamerimages.com/wordpress/wp-content/uploads/2018/05/New-Pikachu-Evolution-Cover-Image.jpg
+[2022-01-25 10:50:55,944] {logging_mixin.py:104} INFO - [INFO] fetching: https://static1.thegamerimages.com/wordpress/wp-content/uploads/2019/06/Shiny-Pikachu.jpg
+[2022-01-25 10:50:56,173] {logging_mixin.py:104} INFO - [INFO] fetching: http://www.baltana.com/files/wallpapers-16/Pokemon-Detective-Pikachu-Movie-Desktop-Wallpaper-39833.jpg
+[2022-01-25 10:50:58,846] {logging_mixin.py:104} INFO - [INFO] fetching: http://i.ytimg.com/vi/o4juhokUSDc/maxresdefault.jpg
+[2022-01-25 10:50:59,041] {logging_mixin.py:104} INFO - [INFO] fetching: https://webgames.host/uploads/2018/09/super-pikachu.png
+[2022-01-25 10:51:03,432] {logging_mixin.py:104} INFO - [INFO] fetching: https://hdwallsbox.com/wallpapers/l/1080x1920/65/pokemon-pikachu-1080x1920-64096.jpg
+[2022-01-25 10:51:04,579] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_86.jpeg
+[2022-01-25 10:51:04,581] {logging_mixin.py:104} INFO - [INFO] fetching: https://yt3.ggpht.com/a-/AAuE7mA4QFZvuGbW5z7QHDyL7KACDGvO_ukJ4IEBKw=s900-mo-c-c0xffffffff-rj-k-no
+[2022-01-25 10:51:04,890] {logging_mixin.py:104} INFO - [INFO] fetching: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/30e23551-c869-487d-a6d4-4aa73c102731/d553a9m-94352d40-78c7-433f-b867-801e0a04f563.jpg/v1/fill/w_894,h_894,q_70,strp/pikachu_wallpaper_by_moustachegirl05_d553a9m-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05MDAiLCJwYXRoIjoiXC9mXC8zMGUyMzU1MS1jODY5LTQ4N2QtYTZkNC00YWE3M2MxMDI3MzFcL2Q1NTNhOW0tOTQzNTJkNDAtNzhjNy00MzNmLWI4NjctODAxZTBhMDRmNTYzLmpwZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xxkve31bTxQ94oqIMB1tVmzxFO7JuCCH7tXVIqsPdZ8
+[2022-01-25 10:51:05,108] {logging_mixin.py:104} INFO - [INFO] fetching: https://static0.thegamerimages.com/wordpress/wp-content/uploads/2020/10/0-Pikachu-Comics.jpg
+[2022-01-25 10:51:05,334] {logging_mixin.py:104} INFO - [INFO] fetching: https://img2.cgtrader.com/items/2663418/5d0149e95e/pikachu-3d-model-obj-stl-blend-dae.jpg
+[2022-01-25 10:51:05,641] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdn4.dualshockers.com/wp-content/uploads/2013/08/pokemon-pikachu-hd.jpg
+[2022-01-25 10:51:07,421] {logging_mixin.py:104} INFO - [INFO] fetching: https://heavy.com/wp-content/uploads/2017/08/screen-shot-2017-08-09-at-9-59-40-am-e1502287216960.png
+[2022-01-25 10:51:07,809] {logging_mixin.py:104} INFO - [INFO] fetching: https://animetos.com/wp-content/uploads/2021/01/img_6054-scaled.jpg
+[2022-01-25 10:51:32,645] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngimg.com/uploads/pokemon/pokemon_PNG103.png
+[2022-01-25 10:51:33,768] {logging_mixin.py:104} INFO - [INFO] fetching: https://appliquedesignz.com/image/cache/data/Pokemon_Pikachu_Applique_Design_590_0-1200x1200.jpg
+[2022-01-25 10:51:34,795] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_95.jpeg
+[2022-01-25 10:51:34,798] {logging_mixin.py:104} INFO - [INFO] fetching: https://i.pinimg.com/736x/69/b4/86/69b4861c06c48e990fd225d75a8c4b73--pokemon.jpg
+[2022-01-25 10:51:36,478] {logging_mixin.py:104} INFO - [INFO] fetching: https://webstockreview.net/images/pikachu-clipart-pikachu-tail-10.png
+[2022-01-25 10:51:37,740] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.pngall.com/wp-content/uploads/5/Pokemon-Pikachu-PNG-Picture.png
+[2022-01-25 10:51:40,250] {logging_mixin.py:104} INFO - [INFO] fetching: https://d3ieicw58ybon5.cloudfront.net/ex/1200.630/20.119.632.332/u/69bd8a787a374c94830d9f9c87ead74d.jpg
+[2022-01-25 10:51:40,526] {logging_mixin.py:104} INFO - [INFO] making request for group 100-150 of 1000...
+[2022-01-25 10:51:41,942] {logging_mixin.py:104} INFO - [INFO] saving images for group 100-150 of 1000...
+[2022-01-25 10:51:41,942] {logging_mixin.py:104} INFO - [INFO] fetching: https://wallpapers.moviemania.io/phone/movie/447404/e255b7/pokemon-detective-pikachu-phone-wallpaper.jpg?w=1536&h=2732
+[2022-01-25 10:51:44,803] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.pokemoncenter.com/products/images/P6480/701-06560/P6480_701-06560_01.jpg
+[2022-01-25 10:51:46,607] {logging_mixin.py:104} INFO - [INFO] fetching: https://i.neoseeker.com/n/7/pika.jpg
+[2022-01-25 10:51:48,080] {logging_mixin.py:104} INFO - [INFO] fetching: https://media.nichegamer.com/wp-content/uploads/2018/01/12144503/detective-pikachu-01-12-18-2-1200x1330.jpg
+[2022-01-25 10:51:48,292] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_103.jpeg
+[2022-01-25 10:51:48,300] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.pokemoncenter.com/products/images/P4537/701-03482/P4537_701-03482_01.jpg
+[2022-01-25 10:51:49,085] {logging_mixin.py:104} INFO - [INFO] fetching: https://nintendoeverything.com/wp-content/uploads/sites/1/nggallery/detective-pikachu-art/detective-pikachu-7.jpg
+[2022-01-25 10:51:51,515] {logging_mixin.py:104} INFO - [INFO] fetching: https://d1lss44hh2trtw.cloudfront.net/assets/article/2019/05/28/detective-pikachu-coffee_feature.jpg
+[2022-01-25 10:51:52,121] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.gamepur.com/files/images/tldr/2017/07/How-To-Catch-Ashs-Hat-Pikachu-Feature.jpg
+[2022-01-25 10:51:53,549] {logging_mixin.py:104} INFO - [INFO] fetching: https://media.pocketmonsters.net/imageboard/31/14561285400034.jpg
+[2022-01-25 10:51:56,472] {logging_mixin.py:104} INFO - [INFO] fetching: https://img1.cgtrader.com/items/2363834/9e80c00060/pocky-pikachu-pokemon-stl-3d-model-stl.jpg
+[2022-01-25 10:51:58,615] {logging_mixin.py:104} INFO - [INFO] fetching: https://vamers.com/wp-content/uploads/2019/05/Vamers-Entertainment-Watch-Detective-Pikachu-online-for-free-Main-Banner.jpg
+[2022-01-25 10:51:59,088] {logging_mixin.py:104} INFO - [INFO] fetching: https://wallpapercave.com/wp/wp5526652.jpg
+[2022-01-25 10:52:00,177] {logging_mixin.py:104} INFO - [INFO] fetching: https://imgix.ranker.com/user_node_img/50090/1001785516/original/pika-pika-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2
+[2022-01-25 10:52:01,119] {logging_mixin.py:104} INFO - [INFO] fetching: https://s2.megabrandsmedia.com/products/megabloks-50434ac1376b0135b061beb317f36f5b-1493649325-fjn61-19745.jpg
+[2022-01-25 10:52:02,132] {logging_mixin.py:104} INFO - [INFO] fetching: https://static3.gamerantimages.com/wordpress/wp-content/uploads/2021/01/SpecialPikachuHeader.jpg
+[2022-01-25 10:52:02,519] {logging_mixin.py:104} INFO - [INFO] fetching: https://static1.srcdn.com/wordpress/wp-content/uploads/2019/05/Pokemon-Detective-Pikachu-Sequel.jpg
+[2022-01-25 10:52:03,164] {logging_mixin.py:104} INFO - [INFO] fetching: http://media.pocketmonsters.net/imageboard/31/15228538780096.jpg
+[2022-01-25 10:52:05,711] {logging_mixin.py:104} INFO - [INFO] fetching: http://www.eventmascots.co.uk/wp-content/uploads/2016/09/pokemon.png
+[2022-01-25 10:52:36,040] {logging_mixin.py:104} INFO - [ERROR]:  HTTPConnectionPool(host='www.eventmascots.co.uk', port=80): Read timed out. (read timeout=30)
+[2022-01-25 10:52:36,041] {logging_mixin.py:104} INFO - [INFO] fetching: https://assets.vg247.com/current/2016/01/detective_pikachu.jpg
+[2022-01-25 10:52:36,351] {logging_mixin.py:104} INFO - [INFO] fetching: https://imgix.ranker.com/user_node_img/50090/1001785514/original/i-will-electrocute_-you-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2
+[2022-01-25 10:52:37,227] {logging_mixin.py:104} INFO - [INFO] fetching: https://static2.srcdn.com/wordpress/wp-content/uploads/2019/05/Pokemon-Detective-Pikachu-Post-credits-scene.jpg
+[2022-01-25 10:52:37,678] {logging_mixin.py:104} INFO - [INFO] fetching: https://s2.megabrandsmedia.com/2018/07/18/16/40/33/r/1000x750/B4BGYOKfXw1531946433.jpeg
+[2022-01-25 10:52:38,199] {logging_mixin.py:104} INFO - [INFO] fetching: http://pinataboy.com/wp-content/uploads/2017/05/0E7CABEB-1F30-4E6C-B586-2CEBDA4C5AD8.jpg
+[2022-01-25 10:52:38,939] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_121.jpeg
+[2022-01-25 10:52:38,941] {logging_mixin.py:104} INFO - [INFO] fetching: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/30e23551-c869-487d-a6d4-4aa73c102731/d553a9m-94352d40-78c7-433f-b867-801e0a04f563.jpg/v1/fill/w_894,h_894,q_70,strp/pikachu_wallpaper_by_moustachegirl05_d553a9m-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05MDAiLCJwYXRoIjoiXC9mXC8zMGUyMzU1MS1jODY5LTQ4N2QtYTZkNC00YWE3M2MxMDI3MzFcL2Q1NTNhOW0tOTQzNTJkNDAtNzhjNy00MzNmLWI4NjctODAxZTBhMDRmNTYzLmpwZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xxkve31bTxQ94oqIMB1tVmzxFO7JuCCH7tXVIqsPdZ8
+[2022-01-25 10:52:39,793] {logging_mixin.py:104} INFO - [INFO] fetching: https://img2.cgtrader.com/items/1936395/2792841c74/pikachu-3d-model-stl.jpg
+[2022-01-25 10:52:40,118] {logging_mixin.py:104} INFO - [INFO] fetching: https://wallpapertag.com/wallpaper/middle/3/e/0/421412-most-popular-pokemon-pikachu-wallpapers-1990x1440-for-mac.jpg
+[2022-01-25 10:52:42,308] {logging_mixin.py:104} INFO - [INFO] fetching: https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/03/Pokemon-Lets-Go-Eevee-and-Pikachu-Dressed-With-Nice-Bows.jpg
+[2022-01-25 10:52:42,987] {logging_mixin.py:104} INFO - [INFO] fetching: https://img2.cgtrader.com/items/2397682/ff1d56ce8d/pikachu-pokemon-3d-model-stl.jpg
+[2022-01-25 10:52:43,402] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.pokemoncenter.com/products/images/P7133/108309/P7133_108309_01.jpg
+[2022-01-25 10:52:45,547] {logging_mixin.py:104} INFO - [INFO] fetching: https://i2.wp.com/sotaku.com/wp-content/uploads/2018/05/Pika.jpg?fit=2503%2C1306&ssl=1
+[2022-01-25 10:52:47,714] {logging_mixin.py:104} INFO - [INFO] fetching: https://cdna.artstation.com/p/assets/images/images/011/013/148/large/bayram-baglayan-img-20180524-181437-904.jpg?1527428430
+[2022-01-25 10:52:48,039] {logging_mixin.py:104} INFO - [INFO] fetching: https://imgix.bustle.com/rehost/2016/9/14/3bddb9fb-8417-42bd-ad68-483047679620.png?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg
+[2022-01-25 10:52:50,147] {logging_mixin.py:104} INFO - [INFO] fetching: https://screenvisionmedia.com/wp-content/uploads/2019/04/pokemon-detective-pikachu.jpg
+[2022-01-25 10:52:52,828] {logging_mixin.py:104} INFO - [INFO] fetching: https://pngeditz.com/wp-content/uploads/2019/06/pikachuu-png.png
+[2022-01-25 10:52:56,028] {logging_mixin.py:104} INFO - [INFO] fetching: https://i.kinja-img.com/gawker-media/image/upload/s--zxpIWDK6--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/r3lapixycmqowiraveb1.jpg
+[2022-01-25 10:53:28,140] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_133.jpeg
+[2022-01-25 10:53:28,146] {logging_mixin.py:104} INFO - [INFO] fetching: http://i.ytimg.com/vi/SHzl08jICtE/maxresdefault.jpg
+[2022-01-25 10:53:35,074] {logging_mixin.py:104} INFO - [INFO] fetching: https://1.bp.blogspot.com/-w4nzY4co0ZM/TifSkIheO8I/AAAAAAAAAJg/gkhTNP32ZQM/s1600/cute_pikachu_picture.jpg
+[2022-01-25 10:53:43,679] {logging_mixin.py:104} INFO - [INFO] fetching: http://2.bp.blogspot.com/-EHYbTpQLsmM/TyVRPH5RMGI/AAAAAAAAAb0/M7hnCPo5i20/w1200-h630-p-k-no-nu/pikachu.jpg
+[2022-01-25 10:53:45,529] {logging_mixin.py:104} INFO - [INFO] fetching: https://static2.thegamerimages.com/wordpress/wp-content/uploads/2020/03/pikachu-libre.jpg
+[2022-01-25 10:53:47,001] {logging_mixin.py:104} INFO - [INFO] fetching: https://i.ytimg.com/vi/0z51tiRkqN8/maxresdefault.jpg
+[2022-01-25 10:53:48,215] {logging_mixin.py:104} INFO - [INFO] fetching: https://images.nintendolife.com/news/2018/05/we_nearly_had_a_terrifying_second_pikachu_evolution_with_horns_and_fangs/1280x720.jpg
+[2022-01-25 10:53:49,370] {logging_mixin.py:104} INFO - [INFO] fetching: https://img1.svg.com/img/gallery/what-animal-is-pikachu-based-on-in-real-life/intro-1567797719.jpg
+[2022-01-25 10:53:50,970] {logging_mixin.py:104} INFO - [INFO] fetching: https://picon.ngfiles.com/701000/flash_701437_largest_crop.png?f1601049528
+[2022-01-25 10:54:01,250] {logging_mixin.py:104} INFO - [INFO] fetching: http://www.zastavki.com/pictures/640x480/2014/Cartoons____Pokemon_Pikachu_059581_29.jpg
+[2022-01-25 10:54:02,662] {logging_mixin.py:104} INFO - [ERROR]:  HTTPSConnectionPool(host='www.zastavki.com', port=443): Max retries exceeded with url: /pictures/640x480/2014/Cartoons____Pokemon_Pikachu_059581_29.jpg (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),))
+[2022-01-25 10:54:02,666] {logging_mixin.py:104} INFO - [INFO] fetching: https://media.sketchfab.com/models/ac60f6f686c14be6a1a636646afb5302/thumbnails/9e77d8ef114a4894a799047fc67ca152/4f892941ad124776884379bb684ead26.jpeg
+[2022-01-25 10:54:04,550] {logging_mixin.py:104} INFO - [INFO] fetching: https://external-preview.redd.it/BzrkFNZBvqovaRR-Kplr4lVm3QCNQ13RZDf35R_bTws.jpg?auto=webp&s=b79c39364d2875b27c2b1f14deb1e9ce57f63756
+[2022-01-25 10:54:07,067] {logging_mixin.py:104} INFO - [INFO] fetching: https://s3.getstickerpack.com/storage/uploads/sticker-pack/pikachu/4.png?a15620715062e25ce71b7dd3da72c25c&d=200x200
+[2022-01-25 10:54:08,572] {logging_mixin.py:104} INFO - [INFO] fetching: https://d3ieicw58ybon5.cloudfront.net/ex/1200.630/20.119.632.332/u/69bd8a787a374c94830d9f9c87ead74d.jpg
+[2022-01-25 10:54:18,590] {logging_mixin.py:104} INFO - [ERROR]:  HTTPSConnectionPool(host='d3ieicw58ybon5.cloudfront.net', port=443): Max retries exceeded with url: /ex/1200.630/20.119.632.332/u/69bd8a787a374c94830d9f9c87ead74d.jpg (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5cdef1ae10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+[2022-01-25 10:54:18,590] {logging_mixin.py:104} INFO - [INFO] fetching: https://www.freegame.games/wp-content/uploads/thumbs/gamemonetize/P/pokemon-pikachu.jpg
+[2022-01-25 10:54:28,599] {logging_mixin.py:104} INFO - [ERROR]:  HTTPSConnectionPool(host='www.freegame.games', port=443): Max retries exceeded with url: /wp-content/uploads/thumbs/gamemonetize/P/pokemon-pikachu.jpg (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5cdef1af60>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+[2022-01-25 10:54:28,600] {logging_mixin.py:104} INFO - [INFO] fetching: http://wallpoper.com/images/00/27/94/87/pokemon-pikachu_00279487.jpg
+[2022-01-25 10:54:29,920] {logging_mixin.py:104} INFO - [INFO-DEL] deleting: /opt/airflow/dags/images/pikachu_145.jpeg
+[2022-01-25 10:54:29,922] {logging_mixin.py:104} INFO - [INFO] making request for group 150-200 of 1000...
+[2022-01-25 10:54:39,935] {taskinstance.py:1455} ERROR - HTTPSConnectionPool(host='api.bing.microsoft.com', port=443): Max retries exceeded with url: /v7.0/images/search/?q=pikachu&offset=150&count=50 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5cdee800f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 978, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 309, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f5cdee800f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.bing.microsoft.com', port=443): Max retries exceeded with url: /v7.0/images/search/?q=pikachu&offset=150&count=50 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5cdee800f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/bing_image_download.py", line 102, in bing_image_download
+    search = requests.get(URL, headers=headers, params=params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.bing.microsoft.com', port=443): Max retries exceeded with url: /v7.0/images/search/?q=pikachu&offset=150&count=50 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5cdee800f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+[2022-01-25 10:54:39,949] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=bing_image_download, task_id=bing_image_download, execution_date=20220125T104258, start_date=20220125T104838, end_date=20220125T105439
+[2022-01-25 10:54:40,020] {local_task_job.py:146} INFO - Task exited with return code 1

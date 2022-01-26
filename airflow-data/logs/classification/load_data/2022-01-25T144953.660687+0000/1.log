@@ -1,0 +1,24 @@
+[2022-01-25 14:50:05,034] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.load_data 2022-01-25T14:49:53.660687+00:00 [queued]>
+[2022-01-25 14:50:05,136] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: classification.load_data 2022-01-25T14:49:53.660687+00:00 [queued]>
+[2022-01-25 14:50:05,136] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 14:50:05,137] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-01-25 14:50:05,137] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-25 14:50:05,160] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_data> on 2022-01-25T14:49:53.660687+00:00
+[2022-01-25 14:50:05,173] {standard_task_runner.py:52} INFO - Started process 2396 to run task
+[2022-01-25 14:50:05,180] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'classification', 'load_data', '2022-01-25T14:49:53.660687+00:00', '--job-id', '178', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/classification.py', '--cfg-path', '/tmp/tmpyzeje3h4', '--error-file', '/tmp/tmpscngq5fx']
+[2022-01-25 14:50:05,185] {standard_task_runner.py:77} INFO - Job 178: Subtask load_data
+[2022-01-25 14:50:05,251] {logging_mixin.py:104} INFO - Running <TaskInstance: classification.load_data 2022-01-25T14:49:53.660687+00:00 [running]> on host 42ecca77b6ba
+[2022-01-25 14:50:05,339] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=classification
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-25T14:49:53.660687+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-25T14:49:53.660687+00:00
+[2022-01-25 14:50:10,150] {python.py:118} INFO - Done. Returned value was: None
+[2022-01-25 14:50:10,175] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=classification, task_id=load_data, execution_date=20220125T144953, start_date=20220125T145005, end_date=20220125T145010
+[2022-01-25 14:50:10,290] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-01-25 14:50:10,298] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-01-25 14:50:10,326] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 2396
+[2022-01-25 14:50:10,339] {process_utils.py:66} INFO - Process psutil.Process(pid=2396, status='terminated', exitcode=0, started='14:50:05') (2396) terminated with exit code 0
