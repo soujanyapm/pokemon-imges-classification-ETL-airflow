@@ -61,7 +61,7 @@ def bing_image_download():
     API_KEY = "33e3910cd4584c28a0bf17e56b0dd0a3"
     folder = process_dir+'images/'
     MAX_RESULTS = 50
-    GROUP_SIZE = 5
+    GROUP_SIZE = 10
     
     if not os.path.isdir(folder):
         os.mkdir(folder)
