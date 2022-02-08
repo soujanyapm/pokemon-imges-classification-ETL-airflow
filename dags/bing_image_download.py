@@ -58,7 +58,7 @@ def bing_image_download():
     # set your Microsoft Cognitive Services API key along with (1) the
     # maximum number of results for a given search and (2) the group size
     # for results (maximum of 50 per request)
-    API_KEY = "32911b01e73d47609a54d81e13d97543"
+    API_KEY = "<your API Key>"
     folder = process_dir+'images/'
     MAX_RESULTS = 50
     GROUP_SIZE = 10
