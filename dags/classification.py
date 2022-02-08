@@ -131,12 +131,12 @@ def save_result():
     #     os.remove(process_dir+"/"+filename)
 
     #================== to save in aws s3 =====================#
-    clients3 = boto3.client('s3', region_name='ap-south-1', aws_access_key_id='AKIAV4LKR62LF7TMUZPN', aws_secret_access_key='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')
+    clients3 = boto3.client('s3', region_name='<region name>', aws_access_key_id='<access-key>', aws_secret_access_key='<secret-key>')
     print("hello")
     for i, filename in enumerate(os.listdir(process_dir)):
         predict_label,img=tuple(filename.split("_",1))
         print(img, "Image it is","  ",predict_label,"predict label")
-        result = clients3.upload_file(os.path.join(process_dir,filename), "pokemonimages1", predict_label+"/"+img)
+        result = clients3.upload_file(os.path.join(process_dir,filename), "<bucket-name>", predict_label+"/"+img)
 
         # remove this file from source dir
         os.remove(process_dir+"/"+filename)
