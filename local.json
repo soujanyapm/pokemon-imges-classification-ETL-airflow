@@ -1,7 +1,0 @@
-{
-"ENDPOINT_URL" : "52.66.196.206:9000",
-"ACCESS_KEY" : "minio",
-"SECRET_KEY" : "minio123",
-"SOURCE_BUCKET":"sourcedata",
-"DESTINATION_BUCKET":"destinationdata"
-}
